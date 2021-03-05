@@ -2,8 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.stats as stats
 import math
-from keras.models import Model
-from keras.layers import *
+
 from keras.datasets import mnist
 from keras.utils import to_categorical
 from mpl_toolkits.mplot3d import Axes3D
