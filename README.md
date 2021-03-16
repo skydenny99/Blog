@@ -10,3 +10,5 @@ File List
 [쉽게 배우는 생성 모델링](https://blog.naver.com/kimdenny123/222265870404) => Sampling with raw mnist.py, Sampling with mean n std.py
 
 [직관적으로 이해하는 AE](https://blog.naver.com/kimdenny123/222275766029) => Simple Auto Encoder.py
+
+[AE를 발전시킨 VAE](https://blog.naver.com/kimdenny123/222277128029) => Simple Variational Auto Encoder.py
