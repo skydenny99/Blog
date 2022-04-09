@@ -44,7 +44,7 @@ if __name__ == '__main__':
     x, y = preprocess()
     x = np.reshape(x, newshape=(x.shape[0], 784))
     full, enc, dec = build_model()
-    training = True
+    training = False
 
     if training:
         full.compile(loss='mse', optimizer='Adam', metrics=['accuracy'])
@@ -59,6 +59,7 @@ if __name__ == '__main__':
         number = i
         num_filter = np.where(np.argmax(y, axis=1) == number)
         tmp_x = x[num_filter]
+        print(tmp_x.shape)
         result_x = np.transpose(enc.predict(tmp_x))
         lg.append(plt.scatter(result_x[0], result_x[1], s=1, alpha=0.8))
     lgnd = plt.legend(lg, range(0, 10), loc='upper left', fontsize='large')
